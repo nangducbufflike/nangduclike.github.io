@@ -1,0 +1,46 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+#TrangChu
+RewriteRule ^home$ /pages/dashboard.php [L]
+RewriteRule ^auth/login$ /auth/login.php [L]
+RewriteRule ^auth/register$ /auth/register.php [L]
+RewriteRule ^profile/info$ /profile/info.php [L]
+RewriteRule ^profile/update-info$ /profile/update_info.php [L]
+RewriteRule ^profile/history$ /profile/history.php [L]
+RewriteRule ^profile/logout$ /profile/logout.php [L]
+RewriteRule ^recharge/banking$ /recharge/banking.php [L]
+RewriteRule ^recharge/card$ /recharge/card.php [L]
+RewriteRule ^service/facebook/like-post/order$ /service/facebook/like_post.php [L]
+RewriteRule ^service/facebook/like-post/list$ /service/facebook/like_post_list.php [L]
+RewriteRule ^service/facebook/comment/order$ /service/facebook/comment.php [L]
+RewriteRule ^service/facebook/comment/list$ /service/facebook/comment_list.php [L]
+RewriteRule ^service/facebook/follow/order$ /service/facebook/follow.php [L]
+RewriteRule ^service/facebook/follow/list$ /service/facebook/follow_list.php [L]
+RewriteRule ^service/facebook/share/order$ /service/facebook/share.php [L]
+RewriteRule ^service/facebook/share/list$ /service/facebook/share_list.php [L]
+RewriteRule ^service/facebook/like-page/order$ /service/facebook/like_page.php [L]
+RewriteRule ^service/facebook/like-page/list$ /service/facebook/like_page_list.php [L]
+RewriteRule ^service/facebook/eye-live/order$ /service/facebook/eye_live.php [L]
+RewriteRule ^service/facebook/eye-live/list$ /service/facebook/eye_live_list.php [L]
+RewriteRule ^service/facebook/view-video/order$ /service/facebook/view_video.php [L]
+RewriteRule ^service/facebook/view-video/list$ /service/facebook/view_video_list.php [L]
+
+
+#modunAdmin
+RewriteRule ^modun/auth/login$ /modun/auth/login.php [L]
+RewriteRule ^modun/auth/register$ /modun/auth/register.php [L]
+RewriteRule ^modun/tool/get-id-fb$ /modun/tool/get_id_facebook.php [L]
+RewriteRule ^modun/recharge/card$ /modun/recharge/card.php [L]
+RewriteRule ^modun/administrator/edit-site$ /modun/administrator/edit_site.php [L]
+RewriteRule ^modun/administrator/user/blocked$ /modun/administrator/user/blocked.php [L]
+RewriteRule ^modun/administrator/user/unblocked$ /modun/administrator/user/unblocked.php [L]
+RewriteRule ^modun/administrator/user/edit$ /modun/administrator/user/edit.php [L]
+RewriteRule ^modun/administrator/user/delete$ /modun/administrator/user/delete.php [L]
+RewriteRule ^modun/administrator/user/point$ /modun/administrator/user/point.php [L]
+RewriteRule ^modun/administrator/service/add$ /modun/administrator/service/add.php [L]
+RewriteRule ^modun/administrator/service/edit$ /modun/administrator/service/edit.php [L]
+RewriteRule ^modun/administrator/service/delete$ /modun/administrator/service/delete.php [L]
+RewriteRule ^modun/administrator/service/running$ /modun/administrator/service/running.php [L]
+RewriteRule ^modun/administrator/service/complete$ /modun/administrator/service/complete.php [L]
+RewriteRule ^modun/administrat
